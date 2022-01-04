@@ -24,8 +24,8 @@ services:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
-    # volumes:
-      # - /tmp/mysql/:/var/lib/mysql/
+    volumes:
+      - /tmp/mysql/:/var/lib/mysql/
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: polr
